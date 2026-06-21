@@ -475,3 +475,47 @@ export interface BacktestResponse {
   time_stability: BacktestTimeWindow[];
   generated_at: string;
 }
+
+// ─── 明日预测 ───
+export interface PredictionSignal {
+  index_symbol: string;
+  index_name: string;
+  index_abbr: string;
+  us_chg: number;
+  expected_a_chg: number;
+  confidence: number;
+  diff_bps: number;
+  p_value: number;
+  significance: string;
+  up_winrate: number;
+  samples: number;
+}
+
+export interface PredictionItem {
+  concept: string;
+  icon: string;
+  total_stocks: number;
+  signals: PredictionSignal[];
+  consensus: number;
+  avg_expected: number;
+  direction: 'bull' | 'bear' | 'neutral';
+  extreme_alert: string;
+  best_signal: PredictionSignal;
+}
+
+export interface PredictionIndex {
+  trade_date: string | null;
+  close: number | null;
+  change_pct: number | null;
+  name: string;
+  abbr: string;
+}
+
+export interface PredictionResponse {
+  generated_at: string;
+  us_market_date: string;
+  a_market_date: string;
+  indices: PredictionIndex[];
+  predictions: PredictionItem[];
+  disclaimer: string;
+}

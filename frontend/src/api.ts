@@ -1,4 +1,4 @@
-import type { ZtPoolResponse, Gainer, HotStock, TrendSignal, DragonTigerItem, DragonTigerSeat, FundFlowItem, NorthBoundData, SectorItem, SectorStock, KLineItem, DragonTigerGroup, ConceptGroup, PaginatedResponse, MarginSummary, ZtAnalysisResponse, MarginHistoryItem, VolumeAnomalyItem, VolumeAnomalyResponse, MarginTrendItem, MarginTopChange, QuietBullItem, TraderDetail, CoOccurrence, UsCorrelationResponse, BacktestResponse } from './types';
+import type { ZtPoolResponse, Gainer, HotStock, TrendSignal, DragonTigerItem, DragonTigerSeat, FundFlowItem, NorthBoundData, SectorItem, SectorStock, KLineItem, DragonTigerGroup, ConceptGroup, PaginatedResponse, MarginSummary, ZtAnalysisResponse, MarginHistoryItem, VolumeAnomalyItem, VolumeAnomalyResponse, MarginTrendItem, MarginTopChange, QuietBullItem, TraderDetail, CoOccurrence, UsCorrelationResponse, BacktestResponse, PredictionResponse } from './types';
 
 const BASE = '/api';
 
@@ -89,4 +89,7 @@ export const api = {
 
   // 回测验证
   backtest: () => get<BacktestResponse>('/backtest'),
+
+  // 明日预测
+  prediction: () => get<PredictionResponse>('/prediction'),
 };

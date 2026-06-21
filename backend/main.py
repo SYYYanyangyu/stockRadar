@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import hot_stocks, trend_signals, dragon_tiger, sectors, kline, margin, volume_anomaly, quiet_bulls, us_correlation, backtest
+from routers import hot_stocks, trend_signals, dragon_tiger, sectors, kline, margin, volume_anomaly, quiet_bulls, us_correlation, backtest, prediction
 from services.storage import init_db
 
 
@@ -33,6 +33,7 @@ app.include_router(volume_anomaly.router, prefix="/api/volume-anomaly", tags=["�
 app.include_router(quiet_bulls.router, prefix="/api/quiet-bulls", tags=["低调牛股"])
 app.include_router(us_correlation.router, prefix="/api", tags=["美股联动"])
 app.include_router(backtest.router, prefix="/api", tags=["回测验证"])
+app.include_router(prediction.router, prefix="/api", tags=["明日预测"])
 
 
 @app.get("/api/health")
