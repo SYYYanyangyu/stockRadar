@@ -1,0 +1,957 @@
+{
+  "generated_at": "2026-06-21T22:20:54.168684",
+  "us_market_date": "2026-06-18",
+  "a_market_date": "2026-06-19",
+  "indices": [
+    {
+      "trade_date": "2026-06-18",
+      "close": 26517.9316,
+      "change_pct": 1.91,
+      "name": "纳斯达克",
+      "abbr": "IXIC"
+    },
+    {
+      "trade_date": "2026-06-18",
+      "close": 7500.5801,
+      "change_pct": 1.08,
+      "name": "标普500",
+      "abbr": "SPX"
+    },
+    {
+      "trade_date": "2026-06-18",
+      "close": 51564.6992,
+      "change_pct": 0.14,
+      "name": "道琼斯",
+      "abbr": "DJI"
+    }
+  ],
+  "cross_indicators": [
+    {
+      "trade_date": "2026-06-16",
+      "value": 942.75,
+      "change_pct": 0.56,
+      "name": "上海金",
+      "abbr": "GOLD"
+    },
+    {
+      "trade_date": "2026-06-18",
+      "value": 14341.7832,
+      "change_pct": 6.42,
+      "name": "费城半导体",
+      "abbr": "SOX"
+    }
+  ],
+  "predictions": [
+    {
+      "concept": "苹果产业链",
+      "icon": "🍎",
+      "total_stocks": 36,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 80,
+          "diff_bps": 76.83,
+          "p_value": 0.0814,
+          "significance": "moderate",
+          "up_winrate": 60.4,
+          "samples": 79
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 80,
+          "diff_bps": 78.23,
+          "p_value": 0.0718,
+          "significance": "moderate",
+          "up_winrate": 62.2,
+          "samples": 79
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 80,
+          "diff_bps": 76.38,
+          "p_value": 0.0766,
+          "significance": "moderate",
+          "up_winrate": 64.3,
+          "samples": 79
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.14,
+          "confidence": 70,
+          "diff_bps": 42.0,
+          "p_value": 0.01,
+          "significance": "moderate",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 1.08,
+          "confidence": 63.0,
+          "diff_bps": 28.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.38,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".IXIC",
+        "index_name": "纳斯达克",
+        "index_abbr": "IXIC",
+        "us_chg": 1.91,
+        "expected_a_chg": 0.48,
+        "confidence": 80,
+        "diff_bps": 76.83,
+        "p_value": 0.0814,
+        "significance": "moderate",
+        "up_winrate": 60.4,
+        "samples": 79
+      }
+    },
+    {
+      "concept": "光伏",
+      "icon": "☀️",
+      "total_stocks": 328,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 95,
+          "diff_bps": 39.78,
+          "p_value": 0.0057,
+          "significance": "strong",
+          "up_winrate": 63.1,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 95,
+          "diff_bps": 47.44,
+          "p_value": 0.0009,
+          "significance": "strong",
+          "up_winrate": 64.9,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 40.68,
+          "p_value": 0.0041,
+          "significance": "strong",
+          "up_winrate": 65.4,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.09,
+          "confidence": 61.0,
+          "diff_bps": 26.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.96,
+          "confidence": 60.0,
+          "diff_bps": 25.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.34,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".IXIC",
+        "index_name": "纳斯达克",
+        "index_abbr": "IXIC",
+        "us_chg": 1.91,
+        "expected_a_chg": 0.48,
+        "confidence": 95,
+        "diff_bps": 39.78,
+        "p_value": 0.0057,
+        "significance": "strong",
+        "up_winrate": 63.1,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "新能源",
+      "icon": "⚡",
+      "total_stocks": 66,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 95,
+          "diff_bps": 39.46,
+          "p_value": 0.0059,
+          "significance": "strong",
+          "up_winrate": 58.1,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 95,
+          "diff_bps": 49.3,
+          "p_value": 0.0005,
+          "significance": "strong",
+          "up_winrate": 61.3,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 51.08,
+          "p_value": 0.0003,
+          "significance": "strong",
+          "up_winrate": 63.1,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.08,
+          "confidence": 60.0,
+          "diff_bps": 25.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.89,
+          "confidence": 58.0,
+          "diff_bps": 23.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.33,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".IXIC",
+        "index_name": "纳斯达克",
+        "index_abbr": "IXIC",
+        "us_chg": 1.91,
+        "expected_a_chg": 0.48,
+        "confidence": 95,
+        "diff_bps": 39.46,
+        "p_value": 0.0059,
+        "significance": "strong",
+        "up_winrate": 58.1,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "风电",
+      "icon": "🌬️",
+      "total_stocks": 176,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 95,
+          "diff_bps": 38.87,
+          "p_value": 0.006,
+          "significance": "strong",
+          "up_winrate": 59.6,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 95,
+          "diff_bps": 39.97,
+          "p_value": 0.0044,
+          "significance": "strong",
+          "up_winrate": 59.7,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 43.4,
+          "p_value": 0.0018,
+          "significance": "strong",
+          "up_winrate": 61.5,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.07,
+          "confidence": 56.0,
+          "diff_bps": 21.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.92,
+          "confidence": 59.0,
+          "diff_bps": 24.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.33,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".IXIC",
+        "index_name": "纳斯达克",
+        "index_abbr": "IXIC",
+        "us_chg": 1.91,
+        "expected_a_chg": 0.48,
+        "confidence": 95,
+        "diff_bps": 38.87,
+        "p_value": 0.006,
+        "significance": "strong",
+        "up_winrate": 59.6,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "锂电池",
+      "icon": "🔋",
+      "total_stocks": 137,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.1,
+          "confidence": 30.0,
+          "diff_bps": 0,
+          "p_value": 1.0,
+          "significance": "none",
+          "up_winrate": 50,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.05,
+          "confidence": 30.0,
+          "diff_bps": 0,
+          "p_value": 1.0,
+          "significance": "none",
+          "up_winrate": 50,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.01,
+          "confidence": 30.0,
+          "diff_bps": 0,
+          "p_value": 1.0,
+          "significance": "none",
+          "up_winrate": 50,
+          "samples": 0
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.08,
+          "confidence": 59.0,
+          "diff_bps": 24.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.89,
+          "confidence": 58.0,
+          "diff_bps": 23.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.3,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": "GOLD",
+        "index_name": "上海金",
+        "index_abbr": "GOLD",
+        "us_chg": 0.56,
+        "expected_a_chg": 0.08,
+        "confidence": 59.0,
+        "diff_bps": 24.0,
+        "p_value": 0.01,
+        "significance": "weak",
+        "up_winrate": 65,
+        "samples": 0
+      }
+    },
+    {
+      "concept": "特斯拉供应链",
+      "icon": "🚗",
+      "total_stocks": 58,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 85.0,
+          "diff_bps": 29.16,
+          "p_value": 0.105,
+          "significance": "weak",
+          "up_winrate": 55.6,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 95,
+          "diff_bps": 52.33,
+          "p_value": 0.0032,
+          "significance": "strong",
+          "up_winrate": 60.2,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 50.14,
+          "p_value": 0.0045,
+          "significance": "strong",
+          "up_winrate": 62.0,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.12,
+          "confidence": 70,
+          "diff_bps": 36.0,
+          "p_value": 0.01,
+          "significance": "moderate",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.77,
+          "confidence": 55.0,
+          "diff_bps": 20.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.3,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".INX",
+        "index_name": "标普500",
+        "index_abbr": "SPX",
+        "us_chg": 1.08,
+        "expected_a_chg": 0.27,
+        "confidence": 95,
+        "diff_bps": 52.33,
+        "p_value": 0.0032,
+        "significance": "strong",
+        "up_winrate": 60.2,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "汽车制造",
+      "icon": "🏭",
+      "total_stocks": 290,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 84.0,
+          "diff_bps": 24.96,
+          "p_value": 0.1194,
+          "significance": "weak",
+          "up_winrate": 58.1,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 95,
+          "diff_bps": 41.67,
+          "p_value": 0.0086,
+          "significance": "strong",
+          "up_winrate": 59.7,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 46.96,
+          "p_value": 0.0028,
+          "significance": "strong",
+          "up_winrate": 62.0,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.08,
+          "confidence": 58.0,
+          "diff_bps": 23.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.69,
+          "confidence": 53.0,
+          "diff_bps": 18.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.29,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".INX",
+        "index_name": "标普500",
+        "index_abbr": "SPX",
+        "us_chg": 1.08,
+        "expected_a_chg": 0.27,
+        "confidence": 95,
+        "diff_bps": 41.67,
+        "p_value": 0.0086,
+        "significance": "strong",
+        "up_winrate": 59.7,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "CRO/医药",
+      "icon": "💊",
+      "total_stocks": 338,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 80.0,
+          "diff_bps": 16.84,
+          "p_value": 0.2003,
+          "significance": "weak",
+          "up_winrate": 58.6,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 80,
+          "diff_bps": 28.95,
+          "p_value": 0.0262,
+          "significance": "moderate",
+          "up_winrate": 60.2,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 40.01,
+          "p_value": 0.0019,
+          "significance": "strong",
+          "up_winrate": 61.5,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.08,
+          "confidence": 60.0,
+          "diff_bps": 25.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.73,
+          "confidence": 54.0,
+          "diff_bps": 19.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.29,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".DJI",
+        "index_name": "道琼斯",
+        "index_abbr": "DJI",
+        "us_chg": 0.14,
+        "expected_a_chg": 0.04,
+        "confidence": 95,
+        "diff_bps": 40.01,
+        "p_value": 0.0019,
+        "significance": "strong",
+        "up_winrate": 61.5,
+        "samples": 334
+      }
+    },
+    {
+      "concept": "机器人/自动化",
+      "icon": "🤖",
+      "total_stocks": 45,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 81.0,
+          "diff_bps": 59.74,
+          "p_value": 0.1712,
+          "significance": "weak",
+          "up_winrate": 58.3,
+          "samples": 79
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 84.0,
+          "diff_bps": 68.57,
+          "p_value": 0.1104,
+          "significance": "weak",
+          "up_winrate": 60.0,
+          "samples": 79
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 80,
+          "diff_bps": 76.0,
+          "p_value": 0.074,
+          "significance": "moderate",
+          "up_winrate": 59.5,
+          "samples": 79
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.12,
+          "confidence": 70,
+          "diff_bps": 37.0,
+          "p_value": 0.01,
+          "significance": "moderate",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.58,
+          "confidence": 50.0,
+          "diff_bps": 15.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.28,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".INX",
+        "index_name": "标普500",
+        "index_abbr": "SPX",
+        "us_chg": 1.08,
+        "expected_a_chg": 0.27,
+        "confidence": 84.0,
+        "diff_bps": 68.57,
+        "p_value": 0.1104,
+        "significance": "weak",
+        "up_winrate": 60.0,
+        "samples": 79
+      }
+    },
+    {
+      "concept": "国防军工",
+      "icon": "🛡️",
+      "total_stocks": 237,
+      "signals": [
+        {
+          "index_symbol": ".IXIC",
+          "index_name": "纳斯达克",
+          "index_abbr": "IXIC",
+          "us_chg": 1.91,
+          "expected_a_chg": 0.48,
+          "confidence": 80,
+          "diff_bps": 31.27,
+          "p_value": 0.0909,
+          "significance": "moderate",
+          "up_winrate": 61.1,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".INX",
+          "index_name": "标普500",
+          "index_abbr": "SPX",
+          "us_chg": 1.08,
+          "expected_a_chg": 0.27,
+          "confidence": 80,
+          "diff_bps": 43.57,
+          "p_value": 0.0174,
+          "significance": "moderate",
+          "up_winrate": 64.4,
+          "samples": 334
+        },
+        {
+          "index_symbol": ".DJI",
+          "index_name": "道琼斯",
+          "index_abbr": "DJI",
+          "us_chg": 0.14,
+          "expected_a_chg": 0.04,
+          "confidence": 95,
+          "diff_bps": 52.17,
+          "p_value": 0.004,
+          "significance": "strong",
+          "up_winrate": 64.8,
+          "samples": 334
+        }
+      ],
+      "cross_signals": [
+        {
+          "index_symbol": "GOLD",
+          "index_name": "上海金",
+          "index_abbr": "GOLD",
+          "us_chg": 0.56,
+          "expected_a_chg": 0.07,
+          "confidence": 55.0,
+          "diff_bps": 20.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        },
+        {
+          "index_symbol": ".SOX",
+          "index_name": "费城半导体",
+          "index_abbr": "SOX",
+          "us_chg": 6.42,
+          "expected_a_chg": 0.5,
+          "confidence": 48.0,
+          "diff_bps": 13.0,
+          "p_value": 0.01,
+          "significance": "weak",
+          "up_winrate": 65,
+          "samples": 0
+        }
+      ],
+      "consensus": 100.0,
+      "avg_expected": 0.26,
+      "direction": "bull",
+      "extreme_alert": "bull_moderate",
+      "best_signal": {
+        "index_symbol": ".DJI",
+        "index_name": "道琼斯",
+        "index_abbr": "DJI",
+        "us_chg": 0.14,
+        "expected_a_chg": 0.04,
+        "confidence": 95,
+        "diff_bps": 52.17,
+        "p_value": 0.004,
+        "significance": "strong",
+        "up_winrate": 64.8,
+        "samples": 334
+      }
+    }
+  ],
+  "disclaimer": "基于历史回测统计，不构成投资建议。过去表现不代表未来收益。"
+}

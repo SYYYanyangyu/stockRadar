@@ -150,6 +150,15 @@ export default function HomePage({ onLoaded }: { onLoaded: () => void }) {
         </Card>
       )}
 
+      {/* ===== 明日预测模块 — 跨市场联动核心 ===== */}
+      <PredictionModule />
+
+      {/* ===== 美股→A股联动模块 ===== */}
+      <UsCorrelationModule />
+
+      {/* ===== 回测验证模块 ===== */}
+      <BacktestModule />
+
       {/* ===== 核心指标卡 ===== */}
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
         <div onClick={() => setDetailSheet({ title: '涨停家数 · 全部涨停股', stocks: items.map(s => ({ code: s.code, name: s.name || '', detail: `${s.streak || 0}连板 · ${s.seal_quality.grade}` })) })} className="cursor-pointer group">

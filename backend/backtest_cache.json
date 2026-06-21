@@ -1,0 +1,1262 @@
+{
+  "summary": {
+    "total_tests": 30,
+    "strong_signals": 18,
+    "moderate_signals": 7,
+    "best_signal": {
+      "concept": "苹果产业链",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 79,
+      "up_avg": 49.393,
+      "down_avg": -28.834,
+      "diff_bps": 78.23,
+      "up_winrate": 62.2,
+      "down_winrate": 44.1,
+      "p_value": 0.0718,
+      "significance": "moderate",
+      "info_ratio": 0.411,
+      "extreme_up_n": 2,
+      "extreme_up_avg": 106.281,
+      "extreme_down_n": 1,
+      "extreme_down_avg": -453.583
+    },
+    "data_period": "2025-02-05 ~ 2026-06-19",
+    "total_aligned_days": 334
+  },
+  "by_concept": [
+    {
+      "concept": "苹果产业链",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 79,
+      "up_avg": 45.874,
+      "down_avg": -30.955,
+      "diff_bps": 76.83,
+      "up_winrate": 60.4,
+      "down_winrate": 45.2,
+      "p_value": 0.0814,
+      "significance": "moderate",
+      "info_ratio": 0.404,
+      "extreme_up_n": 5,
+      "extreme_up_avg": 132.292,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -192.498
+    },
+    {
+      "concept": "苹果产业链",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 79,
+      "up_avg": 49.393,
+      "down_avg": -28.834,
+      "diff_bps": 78.23,
+      "up_winrate": 62.2,
+      "down_winrate": 44.1,
+      "p_value": 0.0718,
+      "significance": "moderate",
+      "info_ratio": 0.411,
+      "extreme_up_n": 2,
+      "extreme_up_avg": 106.281,
+      "extreme_down_n": 1,
+      "extreme_down_avg": -453.583
+    },
+    {
+      "concept": "苹果产业链",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 79,
+      "up_avg": 51.501,
+      "down_avg": -24.884,
+      "diff_bps": 76.38,
+      "up_winrate": 64.3,
+      "down_winrate": 43.2,
+      "p_value": 0.0766,
+      "significance": "moderate",
+      "info_ratio": 0.402,
+      "extreme_up_n": 2,
+      "extreme_up_avg": 106.281,
+      "extreme_down_n": 0,
+      "extreme_down_avg": null
+    },
+    {
+      "concept": "特斯拉供应链",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 23.968,
+      "down_avg": -5.188,
+      "diff_bps": 29.16,
+      "up_winrate": 55.6,
+      "down_winrate": 50.7,
+      "p_value": 0.105,
+      "significance": "weak",
+      "info_ratio": 0.181,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 54.597,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -107.349
+    },
+    {
+      "concept": "特斯拉供应链",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 34.502,
+      "down_avg": -17.83,
+      "diff_bps": 52.33,
+      "up_winrate": 60.2,
+      "down_winrate": 44.8,
+      "p_value": 0.0032,
+      "significance": "strong",
+      "info_ratio": 0.325,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 63.562,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -158.648
+    },
+    {
+      "concept": "特斯拉供应链",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 35.363,
+      "down_avg": -14.772,
+      "diff_bps": 50.14,
+      "up_winrate": 62.0,
+      "down_winrate": 43.9,
+      "p_value": 0.0045,
+      "significance": "strong",
+      "info_ratio": 0.311,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 105.52,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -256.926
+    },
+    {
+      "concept": "锂电池/动力电池",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 32.119,
+      "down_avg": -10.243,
+      "diff_bps": 42.36,
+      "up_winrate": 58.6,
+      "down_winrate": 52.9,
+      "p_value": 0.0066,
+      "significance": "strong",
+      "info_ratio": 0.302,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 55.543,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -72.521
+    },
+    {
+      "concept": "锂电池/动力电池",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 38.695,
+      "down_avg": -16.953,
+      "diff_bps": 55.65,
+      "up_winrate": 60.7,
+      "down_winrate": 50.3,
+      "p_value": 0.0003,
+      "significance": "strong",
+      "info_ratio": 0.397,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 25.773,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -115.388
+    },
+    {
+      "concept": "锂电池/动力电池",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 36.344,
+      "down_avg": -9.929,
+      "diff_bps": 46.27,
+      "up_winrate": 60.3,
+      "down_winrate": 51.6,
+      "p_value": 0.0026,
+      "significance": "strong",
+      "info_ratio": 0.33,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 67.905,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -174.358
+    },
+    {
+      "concept": "光伏",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 29.562,
+      "down_avg": -10.217,
+      "diff_bps": 39.78,
+      "up_winrate": 63.1,
+      "down_winrate": 52.2,
+      "p_value": 0.0057,
+      "significance": "strong",
+      "info_ratio": 0.307,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 67.747,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -88.406
+    },
+    {
+      "concept": "光伏",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 33.674,
+      "down_avg": -13.762,
+      "diff_bps": 47.44,
+      "up_winrate": 64.9,
+      "down_winrate": 50.3,
+      "p_value": 0.0009,
+      "significance": "strong",
+      "info_ratio": 0.366,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 24.694,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -132.078
+    },
+    {
+      "concept": "光伏",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 32.245,
+      "down_avg": -8.439,
+      "diff_bps": 40.68,
+      "up_winrate": 65.4,
+      "down_winrate": 51.0,
+      "p_value": 0.0041,
+      "significance": "strong",
+      "info_ratio": 0.314,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 65.649,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -161.918
+    },
+    {
+      "concept": "风电",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 26.783,
+      "down_avg": -12.089,
+      "diff_bps": 38.87,
+      "up_winrate": 59.6,
+      "down_winrate": 52.2,
+      "p_value": 0.006,
+      "significance": "strong",
+      "info_ratio": 0.305,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 62.113,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -91.395
+    },
+    {
+      "concept": "风电",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 28.069,
+      "down_avg": -11.903,
+      "diff_bps": 39.97,
+      "up_winrate": 59.7,
+      "down_winrate": 52.4,
+      "p_value": 0.0044,
+      "significance": "strong",
+      "info_ratio": 0.314,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 38.67,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -158.46
+    },
+    {
+      "concept": "风电",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 31.097,
+      "down_avg": -12.305,
+      "diff_bps": 43.4,
+      "up_winrate": 61.5,
+      "down_winrate": 51.0,
+      "p_value": 0.0018,
+      "significance": "strong",
+      "info_ratio": 0.341,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 39.041,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -195.237
+    },
+    {
+      "concept": "新能源",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 29.629,
+      "down_avg": -9.829,
+      "diff_bps": 39.46,
+      "up_winrate": 58.1,
+      "down_winrate": 55.9,
+      "p_value": 0.0059,
+      "significance": "strong",
+      "info_ratio": 0.306,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 53.736,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -78.379
+    },
+    {
+      "concept": "新能源",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 34.672,
+      "down_avg": -14.632,
+      "diff_bps": 49.3,
+      "up_winrate": 61.3,
+      "down_winrate": 51.7,
+      "p_value": 0.0005,
+      "significance": "strong",
+      "info_ratio": 0.383,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 13.705,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -135.279
+    },
+    {
+      "concept": "新能源",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 37.268,
+      "down_avg": -13.814,
+      "diff_bps": 51.08,
+      "up_winrate": 63.1,
+      "down_winrate": 50.3,
+      "p_value": 0.0003,
+      "significance": "strong",
+      "info_ratio": 0.397,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 35.411,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -172.73
+    },
+    {
+      "concept": "机器人/自动化",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 79,
+      "up_avg": 12.904,
+      "down_avg": -46.839,
+      "diff_bps": 59.74,
+      "up_winrate": 58.3,
+      "down_winrate": 38.7,
+      "p_value": 0.1712,
+      "significance": "weak",
+      "info_ratio": 0.318,
+      "extreme_up_n": 5,
+      "extreme_up_avg": 111.351,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -160.488
+    },
+    {
+      "concept": "机器人/自动化",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 79,
+      "up_avg": 18.973,
+      "down_avg": -49.601,
+      "diff_bps": 68.57,
+      "up_winrate": 60.0,
+      "down_winrate": 38.2,
+      "p_value": 0.1104,
+      "significance": "weak",
+      "info_ratio": 0.366,
+      "extreme_up_n": 2,
+      "extreme_up_avg": 9.614,
+      "extreme_down_n": 1,
+      "extreme_down_avg": -127.463
+    },
+    {
+      "concept": "机器人/自动化",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 79,
+      "up_avg": 25.055,
+      "down_avg": -50.945,
+      "diff_bps": 76.0,
+      "up_winrate": 59.5,
+      "down_winrate": 40.5,
+      "p_value": 0.074,
+      "significance": "moderate",
+      "info_ratio": 0.405,
+      "extreme_up_n": 2,
+      "extreme_up_avg": 9.614,
+      "extreme_down_n": 0,
+      "extreme_down_avg": null
+    },
+    {
+      "concept": "汽车制造",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 17.586,
+      "down_avg": -7.371,
+      "diff_bps": 24.96,
+      "up_winrate": 58.1,
+      "down_winrate": 52.9,
+      "p_value": 0.1194,
+      "significance": "weak",
+      "info_ratio": 0.174,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 69.604,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -71.453
+    },
+    {
+      "concept": "汽车制造",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 25.265,
+      "down_avg": -16.406,
+      "diff_bps": 41.67,
+      "up_winrate": 59.7,
+      "down_winrate": 51.0,
+      "p_value": 0.0086,
+      "significance": "strong",
+      "info_ratio": 0.29,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 64.694,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -111.715
+    },
+    {
+      "concept": "汽车制造",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 29.216,
+      "down_avg": -17.743,
+      "diff_bps": 46.96,
+      "up_winrate": 62.0,
+      "down_winrate": 49.0,
+      "p_value": 0.0028,
+      "significance": "strong",
+      "info_ratio": 0.327,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 121.38,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -162.704
+    },
+    {
+      "concept": "CRO/医药",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 7.049,
+      "down_avg": -9.786,
+      "diff_bps": 16.84,
+      "up_winrate": 58.6,
+      "down_winrate": 50.0,
+      "p_value": 0.2003,
+      "significance": "weak",
+      "info_ratio": 0.143,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 51.664,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -63.338
+    },
+    {
+      "concept": "CRO/医药",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 12.589,
+      "down_avg": -16.361,
+      "diff_bps": 28.95,
+      "up_winrate": 60.2,
+      "down_winrate": 48.3,
+      "p_value": 0.0262,
+      "significance": "moderate",
+      "info_ratio": 0.246,
+      "extreme_up_n": 8,
+      "extreme_up_avg": 45.185,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -124.354
+    },
+    {
+      "concept": "CRO/医药",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 18.763,
+      "down_avg": -21.249,
+      "diff_bps": 40.01,
+      "up_winrate": 61.5,
+      "down_winrate": 47.7,
+      "p_value": 0.0019,
+      "significance": "strong",
+      "info_ratio": 0.34,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 65.529,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -169.376
+    },
+    {
+      "concept": "国防军工",
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "samples": 334,
+      "up_avg": 26.451,
+      "down_avg": -4.815,
+      "diff_bps": 31.27,
+      "up_winrate": 61.1,
+      "down_winrate": 50.7,
+      "p_value": 0.0909,
+      "significance": "moderate",
+      "info_ratio": 0.189,
+      "extreme_up_n": 18,
+      "extreme_up_avg": 26.974,
+      "extreme_down_n": 23,
+      "extreme_down_avg": -29.444
+    },
+    {
+      "concept": "国防军工",
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "samples": 334,
+      "up_avg": 32.376,
+      "down_avg": -11.198,
+      "diff_bps": 43.57,
+      "up_winrate": 64.4,
+      "down_winrate": 46.9,
+      "p_value": 0.0174,
+      "significance": "moderate",
+      "info_ratio": 0.263,
+      "extreme_up_n": 8,
+      "extreme_up_avg": -1.177,
+      "extreme_down_n": 8,
+      "extreme_down_avg": -108.948
+    },
+    {
+      "concept": "国防军工",
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "samples": 334,
+      "up_avg": 37.929,
+      "down_avg": -14.239,
+      "diff_bps": 52.17,
+      "up_winrate": 64.8,
+      "down_winrate": 47.7,
+      "p_value": 0.004,
+      "significance": "strong",
+      "info_ratio": 0.315,
+      "extreme_up_n": 6,
+      "extreme_up_avg": 40.289,
+      "extreme_down_n": 4,
+      "extreme_down_avg": -156.593
+    }
+  ],
+  "by_index": [
+    {
+      "index_symbol": ".IXIC",
+      "index_name": "纳斯达克",
+      "concepts_tested": 10,
+      "avg_diff_bps": 39.9,
+      "significant_concepts": 6,
+      "best_concept": "苹果产业链"
+    },
+    {
+      "index_symbol": ".INX",
+      "index_name": "标普500",
+      "concepts_tested": 10,
+      "avg_diff_bps": 50.6,
+      "significant_concepts": 9,
+      "best_concept": "苹果产业链"
+    },
+    {
+      "index_symbol": ".DJI",
+      "index_name": "道琼斯",
+      "concepts_tested": 10,
+      "avg_diff_bps": 52.3,
+      "significant_concepts": 10,
+      "best_concept": "苹果产业链"
+    }
+  ],
+  "extreme_analysis": [
+    {
+      "concept": "苹果产业链",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 5,
+          "avg_a_chg": 132.292,
+          "winrate": 80.0
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 18,
+          "avg_a_chg": 42.945,
+          "winrate": 61.1
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 25,
+          "avg_a_chg": 30.699,
+          "winrate": 56.0
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 17,
+          "avg_a_chg": -10.558,
+          "winrate": 41.2
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 10,
+          "avg_a_chg": -1.013,
+          "winrate": 50.0
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 4,
+          "avg_a_chg": -192.498,
+          "winrate": 50.0
+        }
+      ]
+    },
+    {
+      "concept": "特斯拉供应链",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 54.597,
+          "winrate": 66.7
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 28.916,
+          "winrate": 59.1
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 18.314,
+          "winrate": 52.9
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 22.976,
+          "winrate": 58.8
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": -6.765,
+          "winrate": 42.9
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -107.349,
+          "winrate": 30.4
+        }
+      ]
+    },
+    {
+      "concept": "锂电池/动力电池",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 55.543,
+          "winrate": 66.7
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 38.064,
+          "winrate": 63.6
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 27.095,
+          "winrate": 55.9
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 4.574,
+          "winrate": 54.1
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": -4.063,
+          "winrate": 50.0
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -72.521,
+          "winrate": 52.2
+        }
+      ]
+    },
+    {
+      "concept": "光伏",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 67.747,
+          "winrate": 88.9
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 45.654,
+          "winrate": 72.7
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 19.302,
+          "winrate": 56.6
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 6.537,
+          "winrate": 54.1
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": 3.15,
+          "winrate": 53.6
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -88.406,
+          "winrate": 43.5
+        }
+      ]
+    },
+    {
+      "concept": "风电",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 62.113,
+          "winrate": 72.2
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 60.88,
+          "winrate": 70.5
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 11.076,
+          "winrate": 54.4
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 5.813,
+          "winrate": 57.6
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": -1.287,
+          "winrate": 53.6
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -91.395,
+          "winrate": 30.4
+        }
+      ]
+    },
+    {
+      "concept": "新能源",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 53.736,
+          "winrate": 61.1
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 51.781,
+          "winrate": 68.2
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 19.272,
+          "winrate": 54.4
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 5.22,
+          "winrate": 57.6
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": 0.797,
+          "winrate": 53.6
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -78.379,
+          "winrate": 52.2
+        }
+      ]
+    },
+    {
+      "concept": "机器人/自动化",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 5,
+          "avg_a_chg": 111.351,
+          "winrate": 80.0
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 18,
+          "avg_a_chg": 13.966,
+          "winrate": 61.1
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 25,
+          "avg_a_chg": -7.55,
+          "winrate": 52.0
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 17,
+          "avg_a_chg": -14.592,
+          "winrate": 47.1
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 10,
+          "avg_a_chg": -56.201,
+          "winrate": 30.0
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 4,
+          "avg_a_chg": -160.488,
+          "winrate": 25.0
+        }
+      ]
+    },
+    {
+      "concept": "汽车制造",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 69.604,
+          "winrate": 66.7
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 27.606,
+          "winrate": 65.9
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 7.459,
+          "winrate": 54.4
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 7.605,
+          "winrate": 54.1
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": -0.196,
+          "winrate": 46.4
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -71.453,
+          "winrate": 56.5
+        }
+      ]
+    },
+    {
+      "concept": "CRO/医药",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 51.664,
+          "winrate": 66.7
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 23.594,
+          "winrate": 61.4
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": -4.208,
+          "winrate": 56.6
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 1.32,
+          "winrate": 48.2
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": 0.492,
+          "winrate": 53.6
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -63.338,
+          "winrate": 52.2
+        }
+      ]
+    },
+    {
+      "concept": "国防军工",
+      "bins": [
+        {
+          "label": "↑↑↑ >+2%",
+          "n": 18,
+          "avg_a_chg": 26.974,
+          "winrate": 61.1
+        },
+        {
+          "label": "↑↑ +1~2%",
+          "n": 44,
+          "avg_a_chg": 39.432,
+          "winrate": 65.9
+        },
+        {
+          "label": "↑ 0~1%",
+          "n": 136,
+          "avg_a_chg": 22.182,
+          "winrate": 59.6
+        },
+        {
+          "label": "↓ -1~0%",
+          "n": 85,
+          "avg_a_chg": 3.055,
+          "winrate": 48.2
+        },
+        {
+          "label": "↓↓ -2~-1%",
+          "n": 28,
+          "avg_a_chg": -8.474,
+          "winrate": 53.6
+        },
+        {
+          "label": "↓↓↓ <-2%",
+          "n": 23,
+          "avg_a_chg": -29.444,
+          "winrate": 56.5
+        }
+      ]
+    }
+  ],
+  "time_stability": [
+    {
+      "window_start": "2025-02-05",
+      "window_end": "2025-04-30",
+      "n": 60,
+      "diff_bps": 56.86,
+      "p_value": 0.1979,
+      "up_avg": 30.686,
+      "down_avg": -26.176
+    },
+    {
+      "window_start": "2025-02-19",
+      "window_end": "2025-05-19",
+      "n": 60,
+      "diff_bps": 48.33,
+      "p_value": 0.2655,
+      "up_avg": 29.115,
+      "down_avg": -19.219
+    },
+    {
+      "window_start": "2025-03-05",
+      "window_end": "2025-06-03",
+      "n": 60,
+      "diff_bps": 22.87,
+      "p_value": 0.5964,
+      "up_avg": 9.591,
+      "down_avg": -13.275
+    },
+    {
+      "window_start": "2025-03-19",
+      "window_end": "2025-06-17",
+      "n": 60,
+      "diff_bps": 34.61,
+      "p_value": 0.4253,
+      "up_avg": 14.356,
+      "down_avg": -20.253
+    },
+    {
+      "window_start": "2025-04-02",
+      "window_end": "2025-07-01",
+      "n": 60,
+      "diff_bps": 15.51,
+      "p_value": 0.7289,
+      "up_avg": 23.155,
+      "down_avg": 7.648
+    },
+    {
+      "window_start": "2025-04-17",
+      "window_end": "2025-07-15",
+      "n": 60,
+      "diff_bps": -31.41,
+      "p_value": 0.2173,
+      "up_avg": 18.851,
+      "down_avg": 50.264
+    },
+    {
+      "window_start": "2025-05-06",
+      "window_end": "2025-07-29",
+      "n": 60,
+      "diff_bps": -4.75,
+      "p_value": 0.8685,
+      "up_avg": 33.426,
+      "down_avg": 38.175
+    },
+    {
+      "window_start": "2025-05-20",
+      "window_end": "2025-08-12",
+      "n": 60,
+      "diff_bps": 10.3,
+      "p_value": 0.7028,
+      "up_avg": 33.875,
+      "down_avg": 23.579
+    },
+    {
+      "window_start": "2025-06-04",
+      "window_end": "2025-08-26",
+      "n": 60,
+      "diff_bps": 10.24,
+      "p_value": 0.7075,
+      "up_avg": 45.061,
+      "down_avg": 34.825
+    },
+    {
+      "window_start": "2025-06-18",
+      "window_end": "2025-09-09",
+      "n": 60,
+      "diff_bps": 13.06,
+      "p_value": 0.6826,
+      "up_avg": 38.901,
+      "down_avg": 25.842
+    },
+    {
+      "window_start": "2025-07-02",
+      "window_end": "2025-09-23",
+      "n": 60,
+      "diff_bps": 12.66,
+      "p_value": 0.6903,
+      "up_avg": 23.582,
+      "down_avg": 10.925
+    },
+    {
+      "window_start": "2025-07-16",
+      "window_end": "2025-10-15",
+      "n": 60,
+      "diff_bps": 24.92,
+      "p_value": 0.433,
+      "up_avg": 34.657,
+      "down_avg": 9.735
+    },
+    {
+      "window_start": "2025-07-30",
+      "window_end": "2025-10-29",
+      "n": 60,
+      "diff_bps": 26.51,
+      "p_value": 0.4096,
+      "up_avg": 29.874,
+      "down_avg": 3.367
+    },
+    {
+      "window_start": "2025-08-13",
+      "window_end": "2025-11-12",
+      "n": 60,
+      "diff_bps": 24.04,
+      "p_value": 0.4372,
+      "up_avg": 28.107,
+      "down_avg": 4.07
+    },
+    {
+      "window_start": "2025-08-27",
+      "window_end": "2025-11-26",
+      "n": 60,
+      "diff_bps": 59.71,
+      "p_value": 0.0907,
+      "up_avg": 24.927,
+      "down_avg": -34.785
+    },
+    {
+      "window_start": "2025-09-10",
+      "window_end": "2025-12-10",
+      "n": 60,
+      "diff_bps": 73.3,
+      "p_value": 0.0238,
+      "up_avg": 32.013,
+      "down_avg": -41.288
+    },
+    {
+      "window_start": "2025-09-24",
+      "window_end": "2025-12-24",
+      "n": 60,
+      "diff_bps": 83.72,
+      "p_value": 0.0105,
+      "up_avg": 49.864,
+      "down_avg": -33.854
+    },
+    {
+      "window_start": "2025-10-16",
+      "window_end": "2026-01-09",
+      "n": 60,
+      "diff_bps": 82.87,
+      "p_value": 0.0104,
+      "up_avg": 52.12,
+      "down_avg": -30.754
+    },
+    {
+      "window_start": "2025-10-30",
+      "window_end": "2026-01-23",
+      "n": 60,
+      "diff_bps": 58.94,
+      "p_value": 0.0621,
+      "up_avg": 52.685,
+      "down_avg": -6.259
+    },
+    {
+      "window_start": "2025-11-13",
+      "window_end": "2026-02-06",
+      "n": 60,
+      "diff_bps": 86.11,
+      "p_value": 0.0158,
+      "up_avg": 53.065,
+      "down_avg": -33.043
+    },
+    {
+      "window_start": "2025-11-27",
+      "window_end": "2026-03-02",
+      "n": 60,
+      "diff_bps": 66.34,
+      "p_value": 0.035,
+      "up_avg": 62.968,
+      "down_avg": -3.37
+    },
+    {
+      "window_start": "2025-12-11",
+      "window_end": "2026-03-16",
+      "n": 60,
+      "diff_bps": 52.67,
+      "p_value": 0.1205,
+      "up_avg": 57.591,
+      "down_avg": 4.918
+    },
+    {
+      "window_start": "2025-12-25",
+      "window_end": "2026-03-30",
+      "n": 60,
+      "diff_bps": 50.07,
+      "p_value": 0.1993,
+      "up_avg": 45.717,
+      "down_avg": -4.354
+    },
+    {
+      "window_start": "2026-01-12",
+      "window_end": "2026-04-14",
+      "n": 60,
+      "diff_bps": 66.34,
+      "p_value": 0.1276,
+      "up_avg": 45.615,
+      "down_avg": -20.721
+    },
+    {
+      "window_start": "2026-01-26",
+      "window_end": "2026-04-28",
+      "n": 60,
+      "diff_bps": 57.32,
+      "p_value": 0.1918,
+      "up_avg": 29.172,
+      "down_avg": -28.149
+    },
+    {
+      "window_start": "2026-02-09",
+      "window_end": "2026-05-15",
+      "n": 60,
+      "diff_bps": 14.38,
+      "p_value": 0.7441,
+      "up_avg": 17.575,
+      "down_avg": 3.194
+    },
+    {
+      "window_start": "2026-03-03",
+      "window_end": "2026-05-29",
+      "n": 60,
+      "diff_bps": -1.45,
+      "p_value": 0.9747,
+      "up_avg": -6.342,
+      "down_avg": -4.887
+    },
+    {
+      "window_start": "2026-03-17",
+      "window_end": "2026-06-12",
+      "n": 60,
+      "diff_bps": 43.4,
+      "p_value": 0.3465,
+      "up_avg": 5.294,
+      "down_avg": -38.102
+    }
+  ],
+  "generated_at": "2026-06-19"
+}

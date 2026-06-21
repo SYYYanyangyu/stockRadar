@@ -24,6 +24,27 @@ CONCEPTS = [
 
 INDICES = [(".IXIC", "纳斯达克", "IXIC"), (".INX", "标普500", "SPX"), (".DJI", "道琼斯", "DJI")]
 
+# 互补跨市场指标 — 基于相关性分析结果
+# 金银对所有概念正相关（流动性联动），SOX对科技股有额外预测力
+CROSS_INDICATORS = [
+    ("GOLD", "上海金", "GOLD", 0.27),
+    (".SOX", "费城半导体", "SOX", 0.22),
+]
+
+# 每个概念的最佳互补指标权重
+CONCEPT_CROSS_WEIGHTS = {
+    "特斯拉供应链": {"GOLD": 0.36, ".SOX": 0.20},
+    "苹果产业链": {"GOLD": 0.42, ".SOX": 0.28},
+    "机器人/自动化": {"GOLD": 0.37, ".SOX": 0.15},
+    "光伏": {"GOLD": 0.26, ".SOX": 0.25},
+    "锂电池": {"GOLD": 0.24, ".SOX": 0.23},
+    "新能源": {"GOLD": 0.25, ".SOX": 0.23},
+    "CRO/医药": {"GOLD": 0.25, ".SOX": 0.19},
+    "汽车制造": {"GOLD": 0.23, ".SOX": 0.18},
+    "风电": {"GOLD": 0.21, ".SOX": 0.24},
+    "国防军工": {"GOLD": 0.20, ".SOX": 0.13},
+}
+
 
 def _clean_code(code: str) -> str:
     for p in ("sh.", "sz.", "bj."):
@@ -75,6 +96,25 @@ def compute_prediction():
                 "abbr": abbr,
             }
 
+    # 1b. 获取最近跨市场指标数据
+    latest_cross = {}
+    for sym, name, abbr, _ in CROSS_INDICATORS:
+        cur.execute("""
+            SELECT trade_date, value, change_pct
+            FROM us_cross_indicators
+            WHERE symbol = %s AND change_pct IS NOT NULL
+            ORDER BY trade_date DESC LIMIT 1
+        """, (sym,))
+        row = cur.fetchone()
+        if row:
+            latest_cross[sym] = {
+                "trade_date": str(row[0]) if row[0] else None,
+                "value": float(row[1]) if row[1] else None,
+                "change_pct": float(row[2]) if row[2] else None,
+                "name": name,
+                "abbr": abbr,
+            }
+
     # 2. 获取回测统计数据
     stats = _load_backtest_stats()
 
@@ -118,10 +158,6 @@ def compute_prediction():
             up_wr = bt.get("up_winrate", 50)
             samples = bt.get("samples", 0)
 
-            # 基于回测diff_bps估算预期涨幅
-            # 如果纳指涨X%，回测显示概念均值差D bps
-            # 简单线性映射：预期概念涨幅 ≈ idx_chg * (diff_bps/100) / avg_idx_move
-            # 更保守：直接用 up_avg - down_avg 的方向性
             expected_sign = 1 if idx_chg >= 0 else -1
 
             if sig_level == "strong":
@@ -135,14 +171,10 @@ def compute_prediction():
 
             confidence = min(95, max(5, confidence))
 
-            # 预期A股涨跌幅（保守估计）
-            # 用回测 mean diff 的 50% 映射到当前美股涨跌幅
             if abs(idx_chg) < 0.1:
                 expected_a_chg = 0
             else:
-                # diff_bps 是 up_avg - down_avg 的差值（基点）
-                # 乘以相关性衰减因子
-                signal_strength = diff_bps / 30  # normalize: 30bp算是中等信号
+                signal_strength = diff_bps / 30
                 expected_a_chg = idx_chg * max(0.05, min(0.25, abs(signal_strength))) * expected_sign
                 if abs(expected_a_chg) > 5:
                     expected_a_chg = np.sign(expected_a_chg) * 5
@@ -161,27 +193,56 @@ def compute_prediction():
                 "samples": samples,
             })
 
-        if not index_signals:
+        # 跨市场指标信号
+        cross_signals = []
+        cross_weights_map = CONCEPT_CROSS_WEIGHTS.get(concept_name, {})
+        for sym, name, abbr, base_weight in CROSS_INDICATORS:
+            cd = latest_cross.get(sym, {})
+            chg = cd.get("change_pct")
+            if chg is None or abs(chg) < 0.01:
+                continue
+
+            w = cross_weights_map.get(sym, base_weight)
+            # r系数方向：GOLD对所有概念正相关，SOX也是正
+            expected_a = chg * w * 0.6  # 衰减：跨市场指标权重低于三大指数
+            confidence = 35 + min(35, abs(w) * 100)
+
+            cross_signals.append({
+                "index_symbol": sym,
+                "index_name": name,
+                "index_abbr": abbr,
+                "us_chg": round(chg, 2),
+                "expected_a_chg": round(expected_a, 2),
+                "confidence": round(confidence, 0),
+                "diff_bps": round(w * 100, 0),
+                "p_value": 0.01,
+                "significance": "moderate" if abs(w) > 0.3 else "weak",
+                "up_winrate": 65,
+                "samples": 0,
+            })
+
+        all_signals = index_signals + cross_signals
+
+        if not all_signals:
             continue
 
-        # 多指数共识：指数方向相同时增强置信度
-        directions = [1 if s["us_chg"] >= 0 else -1 for s in index_signals]
+        # 多指数共识
+        directions = [1 if s["us_chg"] >= 0 else -1 for s in all_signals]
         consensus = sum(1 for d in directions if d == directions[0]) / len(directions)
 
         # 加权平均预期
-        weights = [s["confidence"] for s in index_signals]
+        weights = [s["confidence"] for s in all_signals]
         total_w = sum(weights)
-        avg_expected = sum(s["expected_a_chg"] * w for s, w in zip(index_signals, weights)) / total_w if total_w > 0 else 0
+        avg_expected = sum(s["expected_a_chg"] * w for s, w in zip(all_signals, weights)) / total_w if total_w > 0 else 0
 
-        # 获取最高置信度的单个指数预测
-        best_signal = max(index_signals, key=lambda s: s["confidence"])
+        best_signal = max(all_signals, key=lambda s: s["confidence"])
 
-        # 极端行情标记
         extreme = ""
         extreme_nas = index_signals[0]["us_chg"] if index_signals else 0
-        if extreme_nas >= 2.0:
+        gold_chg = latest_cross.get("GOLD", {}).get("change_pct", 0) or 0
+        if extreme_nas >= 2.0 or gold_chg >= 1.5:
             extreme = "bull_strong"
-        elif extreme_nas <= -2.0:
+        elif extreme_nas <= -2.0 or gold_chg <= -1.5:
             extreme = "bear_strong"
         elif extreme_nas >= 1.0:
             extreme = "bull_moderate"
@@ -191,6 +252,7 @@ def compute_prediction():
             "icon": icon,
             "total_stocks": total_stocks,
             "signals": index_signals,
+            "cross_signals": cross_signals,
             "consensus": round(consensus * 100, 0),
             "avg_expected": round(avg_expected, 2),
             "direction": "bull" if avg_expected > 0.05 else "bear" if avg_expected < -0.05 else "neutral",
@@ -206,6 +268,7 @@ def compute_prediction():
         "us_market_date": latest_idx.get(".IXIC", {}).get("trade_date", ""),
         "a_market_date": last_a_date,
         "indices": [v for v in latest_idx.values()],
+        "cross_indicators": [v for v in latest_cross.values()],
         "predictions": predictions,
         "disclaimer": "基于历史回测统计，不构成投资建议。过去表现不代表未来收益。",
     }

@@ -56,7 +56,7 @@ export default function PredictionModule() {
       </CardHeader>
       <CardContent>
         {/* ── US Indices Bar ── */}
-        <div className="grid grid-cols-3 gap-3 mb-4">
+        <div className="grid grid-cols-5 gap-3 mb-4">
           {data.indices.map(idx => {
             const isUp = (idx.change_pct ?? 0) >= 0;
             return (
@@ -67,6 +67,22 @@ export default function PredictionModule() {
                 </div>
                 <div className="text-xs text-muted-foreground font-mono">
                   {idx.close?.toLocaleString() ?? '-'}
+                </div>
+              </div>
+            );
+          })}
+          {(data.cross_indicators || []).slice(0, 2).map(ci => {
+            const isUp = (ci.change_pct ?? 0) >= 0;
+            const isGold = ci.abbr === 'GOLD';
+            return (
+              <div key={ci.abbr} className="text-center">
+                <div className="text-xs text-muted-foreground">{ci.name}</div>
+                <div className={cn('text-lg font-black font-mono', isUp ? 'text-red-600' : 'text-green-600')}>
+                  {ci.change_pct != null ? `${isUp ? '+' : ''}${ci.change_pct.toFixed(2)}%` : '-'}
+                </div>
+                <div className="text-xs text-muted-foreground font-mono">
+                  {isGold ? (ci.value != null ? `¥${ci.value.toFixed(0)}/g` : '-') :
+                   ci.value != null ? ci.value.toFixed(0) : '-'}
                 </div>
               </div>
             );
@@ -148,6 +164,17 @@ export default function PredictionModule() {
                         className={cn(
                           'text-xs px-1 py-0.5 rounded font-mono',
                           s.us_chg >= 0 ? 'bg-red-100 dark:bg-red-900/50 text-red-600' : 'bg-green-100 dark:bg-green-900/50 text-green-600',
+                        )}
+                      >
+                        {s.index_abbr}:{s.us_chg >= 0 ? '+' : ''}{s.us_chg}%
+                      </span>
+                    ))}
+                    {(p.cross_signals || []).map(s => (
+                      <span
+                        key={s.index_abbr}
+                        className={cn(
+                          'text-xs px-1 py-0.5 rounded font-mono border border-dashed',
+                          s.us_chg >= 0 ? 'bg-amber-100 dark:bg-amber-900/50 text-amber-700 border-amber-300' : 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 border-blue-300',
                         )}
                       >
                         {s.index_abbr}:{s.us_chg >= 0 ? '+' : ''}{s.us_chg}%

@@ -496,6 +496,7 @@ export interface PredictionItem {
   icon: string;
   total_stocks: number;
   signals: PredictionSignal[];
+  cross_signals: PredictionSignal[];
   consensus: number;
   avg_expected: number;
   direction: 'bull' | 'bear' | 'neutral';
@@ -511,11 +512,20 @@ export interface PredictionIndex {
   abbr: string;
 }
 
+export interface PredictionCrossIndicator {
+  trade_date: string | null;
+  value: number | null;
+  change_pct: number | null;
+  name: string;
+  abbr: string;
+}
+
 export interface PredictionResponse {
   generated_at: string;
   us_market_date: string;
   a_market_date: string;
   indices: PredictionIndex[];
+  cross_indicators: PredictionCrossIndicator[];
   predictions: PredictionItem[];
   disclaimer: string;
 }
