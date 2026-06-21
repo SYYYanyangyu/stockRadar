@@ -1,4 +1,4 @@
-import type { ZtPoolResponse, Gainer, HotStock, TrendSignal, DragonTigerItem, DragonTigerSeat, FundFlowItem, NorthBoundData, SectorItem, SectorStock, KLineItem, DragonTigerGroup, ConceptGroup, PaginatedResponse, MarginSummary, ZtAnalysisResponse, MarginHistoryItem, VolumeAnomalyItem, VolumeAnomalyResponse, MarginTrendItem, MarginTopChange, QuietBullItem, TraderDetail, CoOccurrence, UsCorrelationResponse } from './types';
+import type { ZtPoolResponse, Gainer, HotStock, TrendSignal, DragonTigerItem, DragonTigerSeat, FundFlowItem, NorthBoundData, SectorItem, SectorStock, KLineItem, DragonTigerGroup, ConceptGroup, PaginatedResponse, MarginSummary, ZtAnalysisResponse, MarginHistoryItem, VolumeAnomalyItem, VolumeAnomalyResponse, MarginTrendItem, MarginTopChange, QuietBullItem, TraderDetail, CoOccurrence, UsCorrelationResponse, BacktestResponse } from './types';
 
 const BASE = '/api';
 
@@ -86,4 +86,7 @@ export const api = {
   // 美股→A股联动（默认概念模式）
   usCorrelation: (usIndex = 'all', top = 20, mode: 'concept' | 'stock' = 'concept', period = '10d') =>
     get<UsCorrelationResponse>(`/us-correlation?us_index=${usIndex}&top=${top}&mode=${mode}&period=${period}`),
+
+  // 回测验证
+  backtest: () => get<BacktestResponse>('/backtest'),
 };

@@ -408,3 +408,70 @@ export interface UsCorrelationResponse {
   stocks: UsCorrelatedStock[];
   date: string | null;
 }
+
+// ─── 回测验证 ───
+export interface BacktestConceptResult {
+  concept: string;
+  index_symbol: string;
+  index_name: string;
+  samples: number;
+  up_avg: number;
+  down_avg: number;
+  diff_bps: number;
+  up_winrate: number;
+  down_winrate: number;
+  p_value: number;
+  significance: 'strong' | 'moderate' | 'weak' | 'none';
+  info_ratio: number;
+  extreme_up_n: number;
+  extreme_up_avg: number | null;
+  extreme_down_n: number;
+  extreme_down_avg: number | null;
+}
+
+export interface BacktestIndexSummary {
+  index_symbol: string;
+  index_name: string;
+  concepts_tested: number;
+  avg_diff_bps: number;
+  significant_concepts: number;
+  best_concept: string;
+}
+
+export interface BacktestTimeWindow {
+  window_start: string;
+  window_end: string;
+  n: number;
+  diff_bps: number;
+  p_value: number;
+  up_avg: number;
+  down_avg: number;
+}
+
+export interface BacktestExtremeBin {
+  label: string;
+  n: number;
+  avg_a_chg: number | null;
+  winrate: number | null;
+}
+
+export interface BacktestExtremeConcept {
+  concept: string;
+  bins: BacktestExtremeBin[];
+}
+
+export interface BacktestResponse {
+  summary: {
+    total_tests: number;
+    strong_signals: number;
+    moderate_signals: number;
+    best_signal: BacktestConceptResult;
+    data_period: string;
+    total_aligned_days: number;
+  };
+  by_concept: BacktestConceptResult[];
+  by_index: BacktestIndexSummary[];
+  extreme_analysis: BacktestExtremeConcept[];
+  time_stability: BacktestTimeWindow[];
+  generated_at: string;
+}

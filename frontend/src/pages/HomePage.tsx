@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/Badge';
 import KLineChart from '@/components/trends/KLineChart';
 import MarginChart from '@/components/trends/MarginChart';
 import UsCorrelationModule from '@/components/home/UsCorrelationModule';
+import BacktestModule from '@/components/home/BacktestModule';
 import { cn } from '@/lib/utils';
 import { Flame, Banknote, ShieldCheck, Bomb, Clock, Layers, Globe } from 'lucide-react';
 
@@ -477,6 +478,9 @@ export default function HomePage({ onLoaded }: { onLoaded: () => void }) {
 
       {/* ===== 美股→A股联动模块 ===== */}
       <UsCorrelationModule />
+
+      {/* ===== 回测验证模块 ===== */}
+      <BacktestModule />
 
       {/* ===== Detail Sheet (stat card drill-down) ===== */}
       {detailSheet && (
